@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Dashboard_Snackbar">This is a snackbar!</string>
+
+    <!--Burger Menu strings-->
+    <string name="dashboard">Dashboard</string>
+    <string name="record">Records</string>
+    <string name="report">Reports</string>
+
+    <string name="toBePaid">To-Be-Paid</string>
+    <string name="debtLoan">Debts and Loans</string>
+    <string name="budget">Budgets</string>
+
+    <string name="help">Help</string>
+    <string name="setting">Settings</string>
+    <!---->
+
+</resources>

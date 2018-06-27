@@ -7,35 +7,35 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_dashboard"
-            android:icon="@drawable/ic_dashboard_home"
+            android:icon="@drawable/ic_drawer_home"
             android:title="@string/dashboard" />
         <item
             android:id="@+id/nav_record"
-            android:icon="@drawable/ic_dashboard_record"
+            android:icon="@drawable/ic_drawer_record"
             android:title="@string/record" />
         <item
             android:id="@+id/nav_report"
-            android:icon="@drawable/ic_dashboard_report"
+            android:icon="@drawable/ic_artboard_4_copy_6"
             android:title="@string/report" />
         <!--<item-->
-        <!--android:id="@+id/nav_manage"-->
-        <!--android:icon="@drawable/ic_menu_manage"-->
-        <!--android:title="Tools" />-->
+            <!--android:id="@+id/nav_report"-->
+            <!--android:icon="@drawable/ic_drawer_report"-->
+            <!--android:title="@string/report" />-->
     </group>
 
     <group android:id="@+id/menu_middle"
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_toBePaid"
-            android:icon="@drawable/ic_home2"
+            android:icon="@drawable/ic_drawer_to_be_paid"
             android:title="@string/toBePaid" />
         <item
             android:id="@+id/nav_debtLoan"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_drawer_debt_and_loan"
             android:title="@string/debtLoan" />
         <item
             android:id="@+id/nav_budget"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_drawer_budget"
             android:title="@string/budget" />
     </group>
 
@@ -43,11 +43,11 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_help"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/ic_drawer_help"
             android:title="@string/help" />
         <item
             android:id="@+id/nav_setting"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_drawer_settings"
             android:title="@string/setting" />
     </group>
 

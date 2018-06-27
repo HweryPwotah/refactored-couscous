@@ -3,7 +3,17 @@
     <color name="colorPrimary">#094D84</color>
     <color name="colorPrimaryDark">#003355</color>
     <color name="colorAccent">#ED9E00</color>
-    <color name="HomeRed">#FF2222</color>
-    <color name="RecordYellow">#FFBD29</color>
-    <color name="ReportGreen">#ADEA28</color>
+
+    <!--navigation drawer colors-->
+    <color name="DrawerText">#404E59</color>
+
+    <color name="DrawerHome">#FF2222</color>
+    <color name="DrawerRecord">#FFBD29</color>
+    <color name="DrawerReport">#40BF1D</color>
+    <color name="DrawerToBePaid">#0766F9</color>
+    <color name="DrawerDebtAndLoan">#6C02FC</color>
+    <color name="DrawerBudget">#8B01FE</color>
+    <color name="DrawerHelp">#CC02FE</color>
+    <color name="DrawerSettings">#545454</color>
+
 </resources>

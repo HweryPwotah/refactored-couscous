@@ -154,18 +154,19 @@ public class LauncherActivity extends AppCompatActivity
             ft.commit();
         }
 
+        //other way to do it
+//        LayoutInflater inflater = getLayoutInflater();
+//        LinearLayout container = (LinearLayout) findViewById(R.id.content_frame);
+//        inflater.inflate(R.layout.activity_main, container);
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
     }
 
     private void changeColor2Selected(Drawable drawable, int itemId) {
-//        int color = ((ColorDrawable) drawable).getColor();
-        //TODO find a way to change logo color
-//        int color = ResourcesCompat.getColor(getResources(), itemId,null);
         changeObjectColor(drawable, R.color.colorPrimary);
         if (formerDrawable != null) {
             changeColor2Former(formerItemId);
-//            DrawableCompat.setTint(formerDrawable.mutate(), ContextCompat.getColor(getApplicationContext(), formerColor));
         }
         formerDrawable = drawable;
         formerItemId = itemId;

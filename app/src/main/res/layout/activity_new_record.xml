@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRecordActivity">
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvNewTransaction"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:labelFor="@+id/edit_rate"-->
+    <!--android:text="@string/new_record_new_record"-->
+    <!--android:textSize="28sp"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <EditText
+        android:id="@+id/etRecordName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/newRecord_hint"
+        android:inputType="text"
+        android:labelFor="@+id/edit_rate"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--app:layout_constraintTop_toBottomOf="@+id/tvNewTransaction" />-->
+
+    <!--<Switch-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!---->
+    <!--<SeekBar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabReceiptRecog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <ToggleButton
+        android:id="@+id/tbIncome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="@string/newRecord_outcome"
+        app:layout_constraintEnd_toStartOf="@+id/tbOutcome"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRecordName" />
+
+    <ToggleButton
+        android:id="@+id/tbOutcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/newRecord_transfer"
+        app:layout_constraintEnd_toStartOf="@+id/tbTransfer"
+        app:layout_constraintStart_toEndOf="@+id/tbIncome"
+        app:layout_constraintTop_toBottomOf="@+id/etRecordName"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <ToggleButton
+        android:id="@+id/tbTransfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:text="@string/newRecord_income"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tbOutcome"
+        app:layout_constraintTop_toBottomOf="@+id/etRecordName"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="Price"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbOutcome" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Category"
+        app:layout_constraintEnd_toStartOf="@id/glMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPrice"/>
+
+
+    <TextView
+        android:id="@+id/tvCategorySelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Foods and Beverages"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/glMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glMiddle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/glMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/etPrice"/>
+
+
+    <TextView
+        android:id="@+id/tvAccountSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Cash"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/glMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccount" />
+
+    <RadioGroup
+        android:id="@+id/group_kanji"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/radio_border"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountSelect"
+        >
+        <RadioButton
+            style="@style/MyRadioButtonLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N1"/>
+        <RadioButton
+            style="@style/MyRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N2"/>
+        <RadioButton
+            style="@style/MyRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N3"/>
+        <RadioButton
+            style="@style/MyRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N4"/>
+        <RadioButton
+            style="@style/MyRadioButtonRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N5"/>
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

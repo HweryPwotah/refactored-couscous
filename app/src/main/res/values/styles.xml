@@ -17,4 +17,20 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="MyRadioButton"> // for center options
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/radio_text_kanji_mode</item>
+        <item name="android:background">@drawable/radio_background_kanji_mode</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyRadioButtonLeft" parent="MyRadioButton"> // for left options
+        <item name="android:background">@drawable/radio_background_kanji_mode_left</item>
+    </style>
+
+    <style name="MyRadioButtonRight" parent="MyRadioButton">  // for right options
+        <item name="android:background">@drawable/radio_background_kanji_mode_right</item>
+    </style>
+
 </resources>

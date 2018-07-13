@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Dashboard_Snackbar">This is a snackbar!</string>
+    <string name="New_Record_fab_Snackbar">Receipt recognition is temporarily unavailable.</string>
 
     <!--Burger Menu strings-->
     <string name="dashboard">Dashboard</string>

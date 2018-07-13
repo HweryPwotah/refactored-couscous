@@ -9,4 +9,14 @@
     <string name="title_activity_record">RecordActivity</string>
 
     <string name="appbar_scrolling_view_behavior_own" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="action_done">create record</string>
+
+    <!--new record strings-->
+    <string name="newRecord_new_record">New Record</string>
+    <string name="newRecord_hint">Record Name</string>
+    <string name="newRecord_income">income</string>
+    <string name="newRecord_outcome">outcome</string>
+    <string name="newRecord_transfer">transfer</string>
+    <!--new record strings-->
 </resources>

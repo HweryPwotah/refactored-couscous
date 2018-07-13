@@ -7,13 +7,13 @@
     <!--navigation drawer colors-->
     <color name="DrawerText">#404E59</color>
 
-    <color name="DrawerHome">#FF2222</color>
-    <color name="DrawerRecord">#FFBD29</color>
-    <color name="DrawerReport">#40BF1D</color>
-    <color name="DrawerToBePaid">#0766F9</color>
-    <color name="DrawerDebtAndLoan">#6C02FC</color>
-    <color name="DrawerBudget">#8B01FE</color>
-    <color name="DrawerHelp">#CC02FE</color>
-    <color name="DrawerSettings">#545454</color>
+    <color name="DrawerHome">#0F569C</color>
+    <color name="DrawerRecord">#2371B2</color>
+    <color name="DrawerReport">#3B90CB</color>
+    <color name="DrawerToBePaid">#4298D0</color>
+    <color name="DrawerDebtAndLoan">#469CCF</color>
+    <color name="DrawerBudget">#4DA3CD</color>
+    <color name="DrawerHelp">#5FB3C9</color>
+    <color name="DrawerSettings">#73C7C5</color>
 
 </resources>
